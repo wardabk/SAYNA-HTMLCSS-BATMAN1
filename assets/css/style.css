@@ -1,3 +1,86 @@
-img {
-    background-color: black
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --yellow-color:#FFFF00;
+    --yellow-light:#F8F184;
+    --bleu-color:#19578d;
+    --white-color:#ffffff;
 }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Rajdhani';
+    font-weight: 400;
+    font-size: 36px;
+}
+button{
+    font-family: 'Rajdhani';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.container{
+    width:80%;
+    margin:0 auto;
+}
+body{
+    background-color: black;
+    color:white;
+    font-family: 'Space grotesk';
+    font-weight: 300;
+    font-size: 12px;
+}
+/* design de la navigation*/
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul{
+    list-style: none;
+}
+
+nav ul a{
+color:var(--white-color);
+font-size: 30px;
+font-family: 'Rajdhani';
+font-weight: 500;
+/*text-decoration: none;*/
+}
+ nav ul a:hover{
+    color:var(--yellow-color);
+}
+/*design de la partie en tete hero*/
+#hero{
+    background-image: url(../Illustrations/Bathome1.png);
+    height:800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #19578d;
+
+}
+/* design de la section batman personnage*/
+.batman-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
