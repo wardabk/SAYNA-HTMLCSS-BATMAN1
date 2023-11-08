@@ -5,7 +5,10 @@
     --yellow-color:#FFFF00;
     --yellow-light:#F8F184;
     --bleu-color:#19578d;
-    --white-color:#ffffff;
+    --white-color:hsl(0, 0%, 100%);
+    --gradient-white: #eddebf68;
+    --gradient-red: #89000978;
+    --black-color:#000;
 }
 
 *{
@@ -27,6 +30,7 @@ button{
 .container{
     width:80%;
     margin:0 auto;
+  
 }
 body{
     background-color: black;
@@ -64,17 +68,85 @@ font-weight: 500;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #19578d;
-
+}  
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   width:60%
+    margin:0 auto;
+    padding-top: 150px;   
+}  
+#hero .titre{
+    margin:20px 0;
 }
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding:10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(80deg,var(--gradient-white),var(--gradient-red));
+    box-shadow:var(--black-color)15px 15px 50px;
+}
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 285px;
+}
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right:70px;
+    top:230px;
+}
+.scroll .social{
+    margin-top: 15px;
+}
+
 /* design de la section batman personnage*/
 .batman-personnage{
     display: flex;
     justify-content: space-between;
+  
+}
+#batman-cinema{
+margin-top: 40px;
+}
+.titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.description{
+     margin-bottom: 40px;
+     text-align: justify;
+     width: 80%;
+     font-size: 21px;
+}
+.personnage-info{
+    text-align: center;
+}
+/* design de la partie multimédia */
+#slider-content,.slider-multimedia{
+ display:flex;
+ width:44%;
+ margin:0 auto;
 }
 
 
-
-
+#multimedia .slider-content{
+    padding:5px;
+    background-color:rgb(76, 76, 79);
+}
+#multimedia{
+    width:80%;
+    margin:0 auto;
+  
+}
 
 
 
